@@ -1,21 +1,9 @@
 ﻿using Business.Abstract;
-using Business.Concrate;
 using Business.DependencyResolvers.Autofac;
-using Business.FluentValidation;
-using DataAccess.Abstract;
-using DataAccess.Concrate.Context;
-using DataAccess.Concrate.EntityFramework;
-using DataAccess.Concrate.EntityFramework.Context;
-using Entities.Concrate;
-using FluentValidation.Results;
+using Entities.Concrete;
+using NLog;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UserInterface
@@ -27,6 +15,7 @@ namespace UserInterface
         IAuthorService _authorService;
         ICustomerService _customerService;
         IRentalService _rentalService;
+        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
         public SaphiraLibrary()
         {
             InitializeComponent();
@@ -60,6 +49,7 @@ namespace UserInterface
             dgwCustomer.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgwCustomer.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 9, FontStyle.Bold);
             dgwCustomer.ReadOnly = true;
+            _logger.Info("Müşteriler yüklendi");
         }
         private void LoadBooks()
         {
@@ -427,7 +417,7 @@ namespace UserInterface
                 });
                 MessageBox.Show("Kitap başarılı olarak kiralanmıştır.");
             }
-            catch(Exception exception)
+            catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
             }

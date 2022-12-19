@@ -1,17 +1,12 @@
 ﻿using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
-using DataAccess.Concrate.Context;
-using Entities.Concrate;
+using DataAccess.Concrete.Context;
+using Entities.Concrete;
 using Entities.DTOs;
-using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DataAccess.Concrate.EntityFramework.Context
+namespace DataAccess.Concrete.EntityFramework.Context
 {
     public class EfBookDal : EfEntityRepositoryBase<Book, SaphiraContext>, IBookDal
     {

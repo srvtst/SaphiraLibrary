@@ -2,17 +2,13 @@
 using Business.FluentValidation;
 using Core.Utilities.Security.Hashing;
 using DataAccess.Abstract;
-using Entities.Concrate;
+using Entities.Concrete;
 using Entities.DTOs;
 using FluentValidation;
 using FluentValidation.Results;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Business.Concrate
+namespace Business.Concrete
 {
     public class UserManager : IUserService
     {

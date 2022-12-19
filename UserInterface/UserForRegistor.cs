@@ -2,13 +2,6 @@
 using Business.DependencyResolvers.Autofac;
 using Entities.DTOs;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UserInterface
@@ -43,6 +36,11 @@ namespace UserInterface
             {
                 MessageBox.Show(exception.Message);
             }
+
+        }
+
+        private void UserForRegistor_Load(object sender, EventArgs e)
+        {
 
         }
     }

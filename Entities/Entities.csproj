@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Entities</RootNamespace>
     <AssemblyName>Entities</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrate\Author.cs" />
-    <Compile Include="Concrate\Book.cs" />
-    <Compile Include="Concrate\Category.cs" />
-    <Compile Include="Concrate\Customer.cs" />
-    <Compile Include="Concrate\Rental.cs" />
-    <Compile Include="Concrate\User.cs" />
+    <Compile Include="Concrete\Author.cs" />
+    <Compile Include="Concrete\Book.cs" />
+    <Compile Include="Concrete\Category.cs" />
+    <Compile Include="Concrete\Customer.cs" />
+    <Compile Include="Concrete\Rental.cs" />
+    <Compile Include="Concrete\User.cs" />
     <Compile Include="DTOs\BookDetailDto.cs" />
     <Compile Include="Abstract\IDto.cs" />
     <Compile Include="Abstract\IEntity.cs" />

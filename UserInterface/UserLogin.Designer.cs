@@ -131,6 +131,7 @@ namespace UserInterface
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserLogin";
             this.Text = "Kullanıcı Girişi";
+            this.Load += new System.EventHandler(this.UserLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

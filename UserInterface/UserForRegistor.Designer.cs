@@ -154,6 +154,7 @@ namespace UserInterface
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserForRegistor";
             this.Text = "Üye Ol";
+            this.Load += new System.EventHandler(this.UserForRegistor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

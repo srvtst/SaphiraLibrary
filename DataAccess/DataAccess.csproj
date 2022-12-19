@@ -10,11 +10,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataAccess</RootNamespace>
     <AssemblyName>DataAccess</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,13 +58,13 @@
     <Compile Include="Abstract\ICustomerDal.cs" />
     <Compile Include="Abstract\IRentalDal.cs" />
     <Compile Include="Abstract\IUserDal.cs" />
-    <Compile Include="Concrate\EntityFramework\EfBookDal.cs" />
-    <Compile Include="Concrate\EntityFramework\Context\SaphiraContext.cs" />
-    <Compile Include="Concrate\EntityFramework\EfAuthorDal.cs" />
-    <Compile Include="Concrate\EntityFramework\EfCategoryDal.cs" />
-    <Compile Include="Concrate\EntityFramework\EfCustomerDal.cs" />
-    <Compile Include="Concrate\EntityFramework\EfRentalDal.cs" />
-    <Compile Include="Concrate\EntityFramework\EfUserDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfBookDal.cs" />
+    <Compile Include="Concrete\EntityFramework\Context\SaphiraContext.cs" />
+    <Compile Include="Concrete\EntityFramework\EfAuthorDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCustomerDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfRentalDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfUserDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

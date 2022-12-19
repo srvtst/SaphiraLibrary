@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Business</RootNamespace>
     <AssemblyName>Business</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,12 +76,12 @@
     <Compile Include="Abstract\ICustomerService.cs" />
     <Compile Include="Abstract\IRentalService.cs" />
     <Compile Include="Abstract\IUserService.cs" />
-    <Compile Include="Concrate\AuthorManager.cs" />
-    <Compile Include="Concrate\BookManager.cs" />
-    <Compile Include="Concrate\CategoryManager.cs" />
-    <Compile Include="Concrate\CustomerManager.cs" />
-    <Compile Include="Concrate\RentalManager.cs" />
-    <Compile Include="Concrate\UserManager.cs" />
+    <Compile Include="Concrete\AuthorManager.cs" />
+    <Compile Include="Concrete\BookManager.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\RentalManager.cs" />
+    <Compile Include="Concrete\UserManager.cs" />
     <Compile Include="DependencyResolvers\Autofac\AutofacBusinessModule.cs" />
     <Compile Include="DependencyResolvers\Autofac\InstanceFactory.cs" />
     <Compile Include="FluentValidation\AuthorValidator.cs" />

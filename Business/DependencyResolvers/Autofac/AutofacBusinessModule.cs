@@ -1,14 +1,9 @@
 ﻿using Autofac;
 using Business.Abstract;
-using Business.Concrate;
+using Business.Concrete;
 using DataAccess.Abstract;
-using DataAccess.Concrate.EntityFramework;
-using DataAccess.Concrate.EntityFramework.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DataAccess.Concrete.EntityFramework;
+using DataAccess.Concrete.EntityFramework.Context;
 
 namespace Business.DependencyResolvers.Autofac
 {
